@@ -15,6 +15,11 @@
 		FDBBC3281C4B5FED00C190EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBBC3261C4B5FED00C190EC /* LaunchScreen.storyboard */; };
 		FDBBC3301C4B601100C190EC /* game301.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC32F1C4B601100C190EC /* game301.swift */; };
 		FDBBC3321C4B62AD00C190EC /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC3311C4B62AD00C190EC /* player.swift */; };
+		FDDE038B1C650F960083D9DF /* MainMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE038A1C650F960083D9DF /* MainMenuTableViewController.swift */; };
+		FDDE038D1C650FC40083D9DF /* NumberPlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE038C1C650FC40083D9DF /* NumberPlayerTableViewController.swift */; };
+		FDDE03911C6511970083D9DF /* PlayerNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE03901C6511970083D9DF /* PlayerNameViewController.swift */; };
+		FDDE03931C655E8C0083D9DF /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE03921C655E8C0083D9DF /* Menu.swift */; };
+		FDDE03951C658DFB0083D9DF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE03941C658DFB0083D9DF /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,11 @@
 		FDBBC3291C4B5FED00C190EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDBBC32F1C4B601100C190EC /* game301.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = game301.swift; sourceTree = "<group>"; };
 		FDBBC3311C4B62AD00C190EC /* player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
+		FDDE038A1C650F960083D9DF /* MainMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuTableViewController.swift; sourceTree = "<group>"; };
+		FDDE038C1C650FC40083D9DF /* NumberPlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberPlayerTableViewController.swift; sourceTree = "<group>"; };
+		FDDE03901C6511970083D9DF /* PlayerNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNameViewController.swift; sourceTree = "<group>"; };
+		FDDE03921C655E8C0083D9DF /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		FDDE03941C658DFB0083D9DF /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,8 @@
 				FDBBC31D1C4B5FED00C190EC /* AppDelegate.swift */,
 				FDBBC31F1C4B5FED00C190EC /* ViewController.swift */,
 				FDB7783A1C5291C400012B63 /* Dartboard.swift */,
+				FDDE03921C655E8C0083D9DF /* Menu.swift */,
+				FDDE03941C658DFB0083D9DF /* Game.swift */,
 				FDBBC3311C4B62AD00C190EC /* player.swift */,
 				FDBBC32F1C4B601100C190EC /* game301.swift */,
 				FDBBC3211C4B5FED00C190EC /* Main.storyboard */,
@@ -71,6 +83,9 @@
 				FDBBC3261C4B5FED00C190EC /* LaunchScreen.storyboard */,
 				FDBBC3291C4B5FED00C190EC /* Info.plist */,
 				FD4C986B1C5141720075B67A /* MyPlayground.playground */,
+				FDDE038A1C650F960083D9DF /* MainMenuTableViewController.swift */,
+				FDDE038C1C650FC40083D9DF /* NumberPlayerTableViewController.swift */,
+				FDDE03901C6511970083D9DF /* PlayerNameViewController.swift */,
 			);
 			path = dartBoard301;
 			sourceTree = "<group>";
@@ -147,9 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDBBC3321C4B62AD00C190EC /* player.swift in Sources */,
+				FDDE03951C658DFB0083D9DF /* Game.swift in Sources */,
+				FDDE038B1C650F960083D9DF /* MainMenuTableViewController.swift in Sources */,
+				FDDE038D1C650FC40083D9DF /* NumberPlayerTableViewController.swift in Sources */,
 				FDBBC3201C4B5FED00C190EC /* ViewController.swift in Sources */,
 				FDB7783B1C5291C400012B63 /* Dartboard.swift in Sources */,
 				FDBBC31E1C4B5FED00C190EC /* AppDelegate.swift in Sources */,
+				FDDE03931C655E8C0083D9DF /* Menu.swift in Sources */,
+				FDDE03911C6511970083D9DF /* PlayerNameViewController.swift in Sources */,
 				FDBBC3301C4B601100C190EC /* game301.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

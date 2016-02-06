@@ -12,18 +12,24 @@ class MainMenuTableViewController: UITableViewController {
     
 
    // var players:[player] = [player(playerNameIs: "Jake"), player(playerNameIs: "John")]
-    var mainMenu:[Menu] = []
-    var game:Game?
+   // var mainMenu:[Menu] = []
+    var game:Game = Game(gameNameIs: "Dartboard")
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainMenu = Menu.initMenu()
-        game?.menu?.title = mainMenu[0].title
-        print("Here is \(game?.menu?.title)")
-        print(mainMenu.count)
-        print(mainMenu[0].title)
+        //game?.initMenu()
+        game.menu.append(Menu(titleOfMenu: "301"))
+        game.menu.append(Menu(titleOfMenu: "Setting"))
+        print(game.menu[0].title)
+        print(game.menu.count)
+  //      mainMenu = Menu.initMenu()
+  //      game?.menu?.title = mainMenu[0].title
+  //      print("Here is \(game?.menu?.title)")
+  //      print(mainMenu.count)
+  //      print(mainMenu[0].title)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,7 +52,8 @@ class MainMenuTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return mainMenu.count
+    //    return mainMenu.count
+        return game.menu.count
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -61,9 +68,12 @@ class MainMenuTableViewController: UITableViewController {
    //     let player = players[indexPath.row]
    //     cell.textLabel?.text = player.name
         
-          let menu = mainMenu[indexPath.row]
+  //        let menu = mainMenu[indexPath.row]
+  //      cell.textLabel?.text = menu.title
+        
+        let menu = game.menu[indexPath.row]
         cell.textLabel?.text = menu.title
-
+        
         return cell
     }
     
@@ -72,7 +82,9 @@ class MainMenuTableViewController: UITableViewController {
         
         if segue.identifier == "NumberOfPlayerSegue" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let menu = mainMenu[indexPath.row]
+    //            let menu = mainMenu[indexPath.row]
+    //            numberPlayerTableViewController?.menu = menu
+                let menu = game.menu[indexPath.row]
                 numberPlayerTableViewController?.menu = menu
             }
             

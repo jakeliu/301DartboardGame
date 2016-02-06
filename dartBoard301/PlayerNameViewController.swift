@@ -10,6 +10,15 @@ import UIKit
 
 class PlayerNameViewController: UIViewController {
     
+    @IBOutlet weak var displayPlayerName: UITextField!
+    
+    @IBAction func EnterPlayerName(sender: AnyObject) {
+    }
+    
+    @IBOutlet weak var playerNameLabel: UILabel!
+    @IBAction func submitButton(sender: AnyObject) {
+    }
+    
     var game:Game = Game(gameNameIs: "301")
     var numberOfPlayer:Int?
     

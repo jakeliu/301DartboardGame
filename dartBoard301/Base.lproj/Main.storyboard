@@ -128,6 +128,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="335" width="360" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="EnterPlayerName:" destination="9sV-1H-xMR" eventType="editingDidEnd" id="CcI-Df-lLh"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC4-vd-NQ3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -135,6 +138,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="738" width="360" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="submitButton:" destination="9sV-1H-xMR" eventType="touchUpInside" id="xuL-8T-mEg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player A name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-eW-22W">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -162,6 +168,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="displayPlayerName" destination="sJH-FG-JrS" id="KWM-xN-20z"/>
+                        <outlet property="playerNameLabel" destination="xSe-eW-22W" id="mWB-wl-rZj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vQN-od-DGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

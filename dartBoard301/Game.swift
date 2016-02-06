@@ -12,19 +12,25 @@ class Game {
     var gameName: String
     var players:[player] = []
     var numberOfPlayers: Int = 0
-    var menu:Menu?
+    var menu:[Menu] = []
     
     init(gameNameIs gameName: String ) {
         self.gameName = gameName
     }
     
-    func initMenu() -> [Menu] {
-        var initMenu = [Menu]()
-        
-        initMenu.append(Menu(titleOfMenu: "301"))
-        initMenu.append(Menu(titleOfMenu: "Setting"))
-        return initMenu
+    func initMenu() -> [Menu]{
+        menu.append(Menu(titleOfMenu: "301"))
+        menu.append(Menu(titleOfMenu: "Setting"))
+        return menu
     }
+    
+//    func initMenu() -> menu {
+//        var initMenu = [Menu]()
+//        
+//        initMenu.append(Menu(titleOfMenu: "301"))
+//        initMenu.append(Menu(titleOfMenu: "Setting"))
+//        return initMenu
+//    }
     
     func printNumberOfPlayers() {
         print(numberOfPlayers)

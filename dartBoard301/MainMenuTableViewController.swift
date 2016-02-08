@@ -21,8 +21,12 @@ class MainMenuTableViewController: UITableViewController {
         super.viewDidLoad()
         
         //game?.initMenu()
-        game.menu.append(Menu(titleOfMenu: "301"))
-        game.menu.append(Menu(titleOfMenu: "Setting"))
+        //game.menu.append(Menu(titleOfMenu: "301"))
+        //game.menu.append(Menu(titleOfMenu: "Setting"))
+        
+        game.initMenu()
+        game.initPlayers()
+        
         print(game.menu[0].title)
         print(game.menu.count)
   //      mainMenu = Menu.initMenu()
@@ -84,8 +88,7 @@ class MainMenuTableViewController: UITableViewController {
             if let indexPath = tableView.indexPathForSelectedRow {
     //            let menu = mainMenu[indexPath.row]
     //            numberPlayerTableViewController?.menu = menu
-                let menu = game.menu[indexPath.row]
-                numberPlayerTableViewController?.menu = menu
+                numberPlayerTableViewController?.game = game
             }
             
             

@@ -11,8 +11,9 @@ import Foundation
 class Game {
     var gameName: String
     var players:[player] = []
-    var numberOfPlayers: Int = 0
+    var numberOfPlayers: Int = 4
     var menu:[Menu] = []
+    var dartboard = Dartboard()
     
     init(gameNameIs gameName: String ) {
         self.gameName = gameName
@@ -23,6 +24,15 @@ class Game {
         menu.append(Menu(titleOfMenu: "Setting"))
         return menu
     }
+    
+    func initPlayers() -> [player]{
+        players.append(player(playerNameIs: "Player A"))
+        players.append(player(playerNameIs: "Player B"))
+        players.append(player(playerNameIs: "Player C"))
+        players.append(player(playerNameIs: "Player D"))
+        return players
+    }
+    
     
 //    func initMenu() -> menu {
 //        var initMenu = [Menu]()
